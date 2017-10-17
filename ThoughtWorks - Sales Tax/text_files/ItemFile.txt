@@ -1,0 +1,12 @@
+/*
+Mock item file that stores certain items' information. 
+First column = item's name
+Second column = item's category 
+*/
+
+chocolates, food
+book, book
+music CD, general
+chocolate bar, food
+perfume, general
+headache pills, medical

@@ -1,0 +1,10 @@
+debug log opened
+Empty: []
+Added 42 to head: [{42}]
+Added 99 to tail: [{42}{99}]
+Added 150 to tail: [{42}{99}{150}]
+Added 200 to tail: [{42}{99}{150}{200}]
+Added 100 to tail[{42}{99}{100}{150}{200}]
+Added 30 to tail[{30}{42}{99}{100}{150}{200}]
+Added 300 to tail[{30}{42}{99}{100}{150}{200}{300}]
+Added 220 to tail[{30}{42}{99}{100}{150}{200}{220}{300}]

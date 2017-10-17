@@ -1,0 +1,13 @@
+Sales Tax App
+Language: Java
+
+The main method is in src/main/Receipt/ReceiptMain.java.
+The program should print out the output of the receipt in the console.
+
+The project is structured and organized via features. There is a FileParser, Item, ItemFile, Sales, Receipt, Tax, and Util package. 
+
+The core of this application revolves around the Item class in which an instance is created when we receive a new item input, and then its various fields like tax and total are modified throughout the application when we need to calculate its final amounts. For calculating tax and totals, I made TaxCalculator and SalesTotal classes and made sure that their only job is to calculate and return values and not to update any fields in Item because of modularity and not wanting to couple Item with Tax or Sales. 
+
+I have made an ItemFile.txt (in text_files folder) which contains item information acting like a mock item file typically stored in a database. In the file, there are all the items' names and its corresponding categories. The information from this file will be parsed and stored into a hashmap for later reference in the program. One usage of this hashmap will be a quick look up to verify whether or not the user input items are actual valid items. The other usage is quickly getting an item's category from the hashmap for tax calculations.      
+
+Finally, the ReceiptOrchestrator provides the proper flow of the program from getting the input from the txt file, setting the ItemBasket which contains the all the Item instances created, calculating tax and totals, and returning the output basket.   
